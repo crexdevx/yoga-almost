@@ -84,6 +84,17 @@
   --color-courses-card: var(--courses-card);
   --color-courses-accent: var(--courses-accent);
   --color-courses-link: var(--courses-link);
+  --color-wa-teal: var(--wa-teal);
+  --color-wa-teal-foreground: var(--wa-teal-foreground);
+  --color-wa-teal-muted: var(--wa-teal-muted);
+  --color-wa-mosaic: var(--wa-mosaic);
+  --color-wa-mosaic-foreground: var(--wa-mosaic-foreground);
+  --color-wa-mosaic-muted: var(--wa-mosaic-muted);
+  --color-wa-pastel: var(--wa-pastel);
+  --color-wa-pastel-foreground: var(--wa-pastel-foreground);
+  --color-wa-gold: var(--wa-gold);
+  --color-wa-silver: var(--wa-silver);
+  --color-wa-bronze: var(--wa-bronze);
 }
 
 :root {
