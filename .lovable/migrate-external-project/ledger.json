@@ -1,0 +1,16 @@
+{
+  "source": "https://github.com/crexdevx/yoga-flow-assets-e26f21da.git",
+  "capabilities": [
+    {"capability":"application code","source":"GitHub repository","outcome":"preserve","status":"inspected","next_action":"copy and verify"},
+    {"capability":"routes","source":"five public content routes","outcome":"preserve","status":"inspected","next_action":"copy and verify"},
+    {"capability":"bundled assets","source":"images, logo, favicons, and hero videos","outcome":"preserve","status":"inspected","next_action":"copy and verify"},
+    {"capability":"schema","source":"none detected","outcome":"not applicable","status":"verified","next_action":"none"},
+    {"capability":"records","source":"none detected","outcome":"not applicable","status":"verified","next_action":"none"},
+    {"capability":"authentication and authorization","source":"none detected","outcome":"not applicable","status":"verified","next_action":"none"},
+    {"capability":"uploaded file bytes","source":"bundled repository assets","outcome":"preserve","status":"inspected","next_action":"copy and verify"},
+    {"capability":"external providers and secrets","source":"none detected","outcome":"not applicable","status":"verified","next_action":"none"},
+    {"capability":"public endpoints, callbacks, webhooks, and schedules","source":"none detected","outcome":"not applicable","status":"verified","next_action":"none"},
+    {"capability":"cutover","source":"Lovable preview","outcome":"replace source hosting","status":"pending","next_action":"verify preview"},
+    {"capability":"verification","source":"local preview","outcome":"test","status":"pending","next_action":"build and browser checks"}
+  ]
+}
