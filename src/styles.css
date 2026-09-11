@@ -19,6 +19,7 @@
  */
 
 @theme inline {
+  --font-serif: "Cinzel", Georgia, serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -59,6 +60,30 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-about-canvas: var(--about-canvas);
+  --color-about-navy: var(--about-navy);
+  --color-about-on-navy: var(--about-on-navy);
+  --color-about-muted: var(--about-muted);
+  --color-about-accent: var(--about-accent);
+  --color-about-button: var(--about-button);
+  --color-about-button-foreground: var(--about-button-foreground);
+  --color-about-arrow: var(--about-arrow);
+  --color-hero-sky: var(--hero-sky);
+  --color-why-yoga-section: var(--why-yoga-section);
+  --color-why-yoga-section-a: var(--why-yoga-section-a);
+  --color-why-yoga-section-b: var(--why-yoga-section-b);
+  --color-why-yoga-heading: var(--why-yoga-heading);
+  --color-why-yoga-body: var(--why-yoga-body);
+  --color-why-yoga-tagline: var(--why-yoga-tagline);
+  --color-why-yoga-accent: var(--why-yoga-accent);
+  --color-why-cta: var(--why-cta);
+  --color-why-cta-text: var(--why-cta-text);
+  --color-why-cta-hover: var(--why-cta-hover);
+  --color-courses-heading: var(--courses-heading);
+  --color-courses-body: var(--courses-body);
+  --color-courses-card: var(--courses-card);
+  --color-courses-accent: var(--courses-accent);
+  --color-courses-link: var(--courses-link);
 }
 
 :root {
@@ -95,6 +120,33 @@
   --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
+  --about-canvas: oklch(0.975 0.008 93);
+  --about-navy: oklch(0.235 0.06 250);
+  --about-on-navy: oklch(0.99 0.003 95);
+  --about-muted: oklch(0.9 0.018 245);
+  --about-accent: oklch(0.78 0.11 151);
+  --about-button: oklch(0.99 0.003 95);
+  --about-button-foreground: oklch(0.235 0.06 250);
+  --about-arrow: oklch(0.62 0.105 222);
+  --hero-sky: oklch(0.7 0.13 240);
+  --why-yoga-section: oklch(from #A8D8C0 90% 0.035 h);
+  --why-yoga-section-a: oklch(from #A8D8C0 92% 0.045 h / 0.28);
+  --why-yoga-section-b: oklch(from #A8D8C0 86% 0.04 h / 0.20);
+  --why-yoga-heading: oklch(from #A8D8C0 25% 0.045 h);
+  --why-yoga-body: oklch(from #A8D8C0 42% 0.03 h);
+  --why-yoga-tagline: oklch(from #A8D8C0 55% 0.05 h);
+  --why-yoga-accent: oklch(from #A8D8C0 65% 0.075 h);
+  --why-cta: oklch(0.82 0.1 300);
+  --why-cta-text: oklch(0.25 0.065 250);
+  --why-cta-hover: oklch(0.77 0.11 300);
+  --courses-heading: oklch(0.235 0.06 250);
+  --courses-body: oklch(0.42 0.03 250);
+  --courses-card: oklch(1 0 0);
+  --courses-accent: oklch(0.52 0.12 150);
+  --courses-link: oklch(0.4 0.13 220);
+  --why-cta: oklch(0.82 0.1 300);
+  --why-cta-text: oklch(0.25 0.065 250);
+  --why-cta-hover: oklch(0.77 0.11 300);
 }
 
 .dark {
@@ -130,6 +182,146 @@
   --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.551 0.027 264.364);
+  --about-canvas: oklch(0.17 0.025 250);
+  --about-navy: oklch(0.22 0.055 250);
+  --about-on-navy: oklch(0.99 0.003 95);
+  --about-muted: oklch(0.87 0.018 245);
+  --about-accent: oklch(0.78 0.11 151);
+  --about-button: oklch(0.99 0.003 95);
+  --about-button-foreground: oklch(0.22 0.055 250);
+  --about-arrow: oklch(0.68 0.105 222);
+  --hero-sky: oklch(0.7 0.13 240);
+  --why-yoga-section: oklch(from #A8D8C0 22% 0.03 h);
+  --why-yoga-section-a: oklch(from #A8D8C0 26% 0.035 h / 0.30);
+  --why-yoga-section-b: oklch(from #A8D8C0 18% 0.025 h / 0.22);
+  --why-yoga-heading: oklch(0.96 0.015 95);
+  --why-yoga-body: oklch(0.85 0.02 95);
+  --why-yoga-tagline: oklch(from #A8D8C0 75% 0.04 h);
+  --why-yoga-accent: oklch(from #A8D8C0 65% 0.075 h);
+  --why-cta: oklch(0.72 0.12 300);
+  --why-cta-text: oklch(0.2 0.07 250);
+  --why-cta-hover: oklch(0.67 0.13 300);
+  --courses-heading: oklch(0.96 0.015 95);
+  --courses-body: oklch(0.85 0.02 95);
+  --courses-card: oklch(0.22 0.04 250);
+  --courses-accent: oklch(0.78 0.11 151);
+  --courses-link: oklch(0.78 0.12 220);
+}
+
+.about-feature__action::before {
+  position: absolute;
+  right: 100%;
+  bottom: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+  box-shadow: 1rem 1rem 0 1rem var(--about-button);
+  content: "";
+}
+
+.courses-section {
+  background-color: var(--about-canvas);
+}
+
+.courses-scroll {
+  scrollbar-color: var(--courses-link) transparent;
+  scrollbar-width: thin;
+}
+
+.courses-scroll::-webkit-scrollbar {
+  height: 0.45rem;
+}
+
+.courses-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.courses-scroll::-webkit-scrollbar-thumb {
+  background: var(--courses-link);
+  border-radius: 999px;
+}
+
+.reviews-section {
+  background-color: var(--about-canvas);
+}
+
+.reviews-marquee {
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 4rem, black calc(100% - 4rem), transparent);
+  mask-image: linear-gradient(to right, transparent, black 4rem, black calc(100% - 4rem), transparent);
+}
+
+.reviews-marquee::-webkit-scrollbar {
+  display: none;
+}
+
+.reviews-track {
+  display: flex;
+  gap: 1.25rem;
+  width: max-content;
+  padding: 0.5rem 1rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reviews-track {
+    animation: reviews-scroll 70s linear infinite;
+  }
+
+  .reviews-marquee:hover .reviews-track,
+  .reviews-marquee:focus-within .reviews-track {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes reviews-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 0.625rem));
+  }
+}
+
+.why-yoga-section {
+  position: relative;
+  background-color: var(--why-yoga-section);
+  background-image:
+    radial-gradient(ellipse 55% 50% at 18% 25%, var(--why-yoga-section-a) 0%, transparent 70%),
+    radial-gradient(ellipse 45% 55% at 82% 72%, var(--why-yoga-section-b) 0%, transparent 65%),
+    radial-gradient(ellipse 35% 35% at 55% 48%, var(--why-yoga-section-a) 0%, transparent 65%);
+}
+
+.why-yoga-section::before {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% 40%, oklch(1 0 0 / 0.22) 0%, transparent 65%);
+  content: "";
+  pointer-events: none;
+}
+
+.why-yoga-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .about-feature,
+  .why-yoga-section,
+  .why-us-section {
+    animation: about-reveal 700ms ease-out both;
+  }
+}
+
+@keyframes about-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @layer base {
