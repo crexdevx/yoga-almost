@@ -84,6 +84,17 @@
   --color-courses-card: var(--courses-card);
   --color-courses-accent: var(--courses-accent);
   --color-courses-link: var(--courses-link);
+  --color-wa-teal: var(--wa-teal);
+  --color-wa-teal-foreground: var(--wa-teal-foreground);
+  --color-wa-teal-muted: var(--wa-teal-muted);
+  --color-wa-mosaic: var(--wa-mosaic);
+  --color-wa-mosaic-foreground: var(--wa-mosaic-foreground);
+  --color-wa-mosaic-muted: var(--wa-mosaic-muted);
+  --color-wa-pastel: var(--wa-pastel);
+  --color-wa-pastel-foreground: var(--wa-pastel-foreground);
+  --color-wa-gold: var(--wa-gold);
+  --color-wa-silver: var(--wa-silver);
+  --color-wa-bronze: var(--wa-bronze);
 }
 
 :root {
@@ -144,6 +155,17 @@
   --courses-card: oklch(1 0 0);
   --courses-accent: oklch(0.52 0.12 150);
   --courses-link: oklch(0.4 0.13 220);
+  --wa-teal: oklch(0.72 0.07 190);
+  --wa-teal-foreground: oklch(0.18 0.04 200);
+  --wa-teal-muted: oklch(0.32 0.035 200);
+  --wa-mosaic: oklch(0.62 0.09 195);
+  --wa-mosaic-foreground: oklch(0.99 0.005 190);
+  --wa-mosaic-muted: oklch(0.94 0.015 190);
+  --wa-pastel: oklch(0.94 0.075 95);
+  --wa-pastel-foreground: oklch(0.28 0.05 80);
+  --wa-gold: oklch(0.8 0.13 85);
+  --wa-silver: oklch(0.78 0.01 250);
+  --wa-bronze: oklch(0.66 0.1 55);
   --why-cta: oklch(0.82 0.1 300);
   --why-cta-text: oklch(0.25 0.065 250);
   --why-cta-hover: oklch(0.77 0.11 300);
@@ -206,6 +228,17 @@
   --courses-card: oklch(0.22 0.04 250);
   --courses-accent: oklch(0.78 0.11 151);
   --courses-link: oklch(0.78 0.12 220);
+  --wa-teal: oklch(0.44 0.06 190);
+  --wa-teal-foreground: oklch(0.97 0.01 190);
+  --wa-teal-muted: oklch(0.88 0.015 190);
+  --wa-mosaic: oklch(0.38 0.07 195);
+  --wa-mosaic-foreground: oklch(0.98 0.005 190);
+  --wa-mosaic-muted: oklch(0.9 0.015 190);
+  --wa-pastel: oklch(0.42 0.07 95);
+  --wa-pastel-foreground: oklch(0.97 0.02 95);
+  --wa-gold: oklch(0.8 0.13 85);
+  --wa-silver: oklch(0.78 0.01 250);
+  --wa-bronze: oklch(0.7 0.1 55);
 }
 
 .about-feature__action::before {
@@ -333,4 +366,33 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
   }
+}
+
+.wa-mosaic {
+  background-color: var(--wa-mosaic);
+  background-image:
+    linear-gradient(135deg, oklch(1 0 0 / 0.10) 25%, transparent 25%),
+    linear-gradient(225deg, oklch(1 0 0 / 0.10) 25%, transparent 25%),
+    linear-gradient(45deg, oklch(0 0 0 / 0.06) 25%, transparent 25%),
+    linear-gradient(315deg, oklch(0 0 0 / 0.06) 25%, transparent 25%);
+  background-position:
+    22px 0,
+    22px 0,
+    0 0,
+    0 0;
+  background-size: 44px 44px;
+}
+
+.wa-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--wa-teal) transparent;
+}
+
+.wa-scroll::-webkit-scrollbar {
+  height: 0.45rem;
+}
+
+.wa-scroll::-webkit-scrollbar-thumb {
+  background: var(--wa-teal);
+  border-radius: 999px;
 }
