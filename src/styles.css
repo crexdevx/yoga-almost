@@ -92,6 +92,12 @@
   --color-wa-mosaic-muted: var(--wa-mosaic-muted);
   --color-wa-pastel: var(--wa-pastel);
   --color-wa-pastel-foreground: var(--wa-pastel-foreground);
+  --color-wa-beige: var(--wa-beige);
+  --color-wa-beige-foreground: var(--wa-beige-foreground);
+  --color-wa-beige-muted: var(--wa-beige-muted);
+  --color-wa-brown: var(--wa-brown);
+  --color-wa-brown-foreground: var(--wa-brown-foreground);
+  --color-wa-brown-muted: var(--wa-brown-muted);
   --color-wa-gold: var(--wa-gold);
   --color-wa-silver: var(--wa-silver);
   --color-wa-bronze: var(--wa-bronze);
