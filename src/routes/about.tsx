@@ -70,6 +70,68 @@ const faqs = [
   },
 ];
 
+const pallabiHighlights = [
+  {
+    title: "M.A. in Yoga Therapy",
+    body: "Advanced academic training in applying yoga for clinical and physical rehabilitation.",
+  },
+  {
+    title: "International Diploma in Yoga & Naturopathy",
+    body: "Certified expertise in natural healing and traditional yogic sciences.",
+  },
+  {
+    title: "Two-Time National Gold Medalist",
+    body: "Secured top national honors in 2000 and 2017, including gold at the 22nd National Yoga Competition.",
+  },
+  {
+    title: "Patanjali Yoga Lover Award (2017)",
+    body: "Honored internationally by the Yoga Society of Kashmir for outstanding contributions to yoga sports and therapy.",
+  },
+  {
+    title: "Yogathon Gold Certificate",
+    body: "Earned this endurance distinction by successfully completing 108 continuous rounds of Surya Namaskar.",
+  },
+  {
+    title: "International Grade “A” Referee",
+    body: "Certified at the highest levels to officiate international yoga sports competitions.",
+  },
+  {
+    title: "State-Level Official",
+    body: "Official Referee for the 1st All Assam Yoga Convention & Seminar at Sankardev University, Guwahati.",
+  },
+  {
+    title: "Community Leadership",
+    body: "Primary instructor for state health initiatives, leading International Yoga Day sessions at the Gauhati Medical College Auditorium.",
+  },
+];
+
+const syedHighlights = [
+  {
+    title: "M.Sc. in Yoga & Yogic Science",
+    body: "Deep academic grounding in yogic philosophy, science, and applied practice.",
+  },
+  {
+    title: "2017 International Silver Medalist",
+    body: "Competed at the 2nd International Yoga Sports Championship and brought home silver for India.",
+  },
+  {
+    title: "International Yoga Sports Referee",
+    body: "Certified to officiate at national and international yoga sports events.",
+  },
+  {
+    title: "Program Director & Owner",
+    body: "Registered owner and primary operational contact for the centre, guiding its growth and day-to-day mission.",
+  },
+  {
+    title: "Curriculum Overseer",
+    body: "Designs and runs the centre's most advanced and specialized programs, including:",
+    nested: [
+      "Advanced Yoga Teacher's Training Course — preparing the next generation of certified instructors.",
+      "Sports Yoga Training Programme — training athletes in Power, Traditional, Artistic, and Rhythmic Yoga for competition.",
+    ],
+  },
+];
+
 export const Route = createFileRoute("/about")({
   staticData: { sitemap: true },
   head: () => ({
@@ -100,51 +162,49 @@ function AboutPage() {
     <main className="bg-about-canvas">
       <section className="relative bg-about-navy px-4 pb-16 pt-28 text-about-on-navy sm:px-6 sm:pb-20 sm:pt-32 lg:px-8">
         <FloatingHeader />
-        <div className="mx-auto max-w-4xl text-center">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-about-accent">
-            Who Are We
+        <div className="mx-auto max-w-5xl text-center">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-about-accent">
+            North East Yoga and Meditation Centre
           </p>
-          <h1 className="font-serif text-3xl leading-tight sm:text-4xl lg:text-5xl">
-            Key Instructor Accolades
+          <h1 className="mt-4 font-serif text-5xl leading-[0.95] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
+            Who Are We
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-about-muted sm:text-base sm:leading-7">
-            The people, the practice, and the milestones that shaped North East Yoga and
-            Meditation Centre.
+          <p className="mx-auto mt-6 max-w-2xl text-sm leading-6 text-about-muted sm:text-base sm:leading-7">
+            Key instructor accolades, the journey of our centre, and the achievements that continue
+            to shape yoga in North East India.
           </p>
         </div>
       </section>
 
       <section
         aria-labelledby="pallabi-heading"
-        className="bg-wa-teal px-4 py-14 sm:px-6 sm:py-20 lg:px-8"
+        className="bg-wa-beige px-4 py-14 sm:px-6 sm:py-20 lg:px-8"
       >
-        <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1fr)] lg:gap-16">
+        <div className="mx-auto grid max-w-6xl items-start gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-16">
           <img
             src={pallabiPhoto.url}
             alt="Pallabi Saikia, Managing Director and Chief Professionalist"
-            className="mx-auto w-full max-w-sm rounded-[2rem] object-cover shadow-2xl"
+            className="w-full rounded-[2rem] object-cover shadow-2xl"
             width={800}
             height={800}
             loading="lazy"
             decoding="async"
           />
-          <div className="text-wa-teal-foreground">
-            <h2 id="pallabi-heading" className="font-serif text-3xl leading-tight sm:text-4xl">
+          <div className="text-wa-beige-foreground">
+            <h2 id="pallabi-heading" className="font-serif text-3xl leading-tight sm:text-4xl lg:text-5xl">
               Pallabi Saikia
             </h2>
-            <p className="mt-2 text-sm font-semibold uppercase tracking-[0.14em] text-wa-teal-muted">
+            <p className="mt-2 text-sm font-semibold uppercase tracking-[0.14em] text-wa-beige-muted">
               Managing Director &amp; Chief Professionalist
             </p>
-            <ul className="mt-6 space-y-3 text-base leading-7">
-              {[
-                "Assam Yoga Samraggi",
-                "2× National Gold Medalist",
-                "108 Surya Namaskar Gold Certificate",
-                "Grade “A” International Yoga Sports Referee",
-              ].map((item) => (
-                <li key={item} className="flex gap-3">
-                  <span aria-hidden="true" className="mt-3 size-2 shrink-0 rounded-full bg-wa-teal-foreground" />
-                  <span>{item}</span>
+            <ul className="mt-8 grid gap-4 sm:grid-cols-2">
+              {pallabiHighlights.map((item) => (
+                <li key={item.title} className="flex gap-3">
+                  <span aria-hidden="true" className="mt-2.5 size-2 shrink-0 rounded-full bg-wa-beige-foreground" />
+                  <span className="text-sm leading-6 sm:text-base sm:leading-7">
+                    <strong className="font-semibold">{item.title}:</strong>{" "}
+                    {item.body}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -154,38 +214,47 @@ function AboutPage() {
 
       <section
         aria-labelledby="syed-heading"
-        className="wa-mosaic px-4 py-14 sm:px-6 sm:py-20 lg:px-8"
+        className="bg-wa-brown px-4 py-14 text-wa-brown-foreground sm:px-6 sm:py-20 lg:px-8"
       >
-        <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.85fr)] lg:gap-16">
-          <div className="order-2 text-wa-mosaic-foreground lg:order-1">
-            <h2 id="syed-heading" className="font-serif text-3xl leading-tight sm:text-4xl">
-              Syed Inamul Hussain
-            </h2>
-            <p className="mt-2 text-sm font-semibold uppercase tracking-[0.14em] text-wa-mosaic-muted">
-              Senior Yoga Professional
-            </p>
-            <ul className="mt-6 space-y-3 text-base leading-7">
-              {[
-                "M.Sc. in Yoga & Yogic Science",
-                "2017 International Silver Medalist",
-                "International Yoga Sports Referee",
-              ].map((item) => (
-                <li key={item} className="flex gap-3">
-                  <span aria-hidden="true" className="mt-3 size-2 shrink-0 rounded-full bg-wa-mosaic-foreground" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="mx-auto grid max-w-6xl items-start gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-16">
           <img
             src={syedPhoto.url}
             alt="Syed Inamul Hussain, Senior Yoga Professional"
-            className="order-1 mx-auto w-full max-w-sm rounded-[2rem] object-cover shadow-2xl lg:order-2"
+            className="w-full rounded-[2rem] object-cover shadow-2xl"
             width={800}
             height={980}
             loading="lazy"
             decoding="async"
           />
+          <div>
+            <h2 id="syed-heading" className="font-serif text-3xl leading-tight sm:text-4xl lg:text-5xl">
+              Syed Inamul Hussain
+            </h2>
+            <p className="mt-2 text-sm font-semibold uppercase tracking-[0.14em] text-wa-brown-muted">
+              Senior Yoga Professional
+            </p>
+            <ul className="mt-8 grid gap-4 sm:grid-cols-2">
+              {syedHighlights.map((item) => (
+                <li key={item.title} className="flex gap-3">
+                  <span aria-hidden="true" className="mt-2.5 size-2 shrink-0 rounded-full bg-wa-brown-foreground" />
+                  <span className="text-sm leading-6 sm:text-base sm:leading-7">
+                    <strong className="font-semibold">{item.title}:</strong>{" "}
+                    {item.body}
+                    {item.nested && (
+                      <ul className="mt-2 space-y-1.5 pl-4">
+                        {item.nested.map((n) => (
+                          <li key={n} className="relative pl-4 text-sm leading-6">
+                            <span aria-hidden="true" className="absolute left-0 top-2.5 size-1 rounded-full bg-wa-brown-muted" />
+                            {n}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
