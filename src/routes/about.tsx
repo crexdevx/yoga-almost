@@ -258,16 +258,16 @@ function AboutPage() {
         </div>
       </section>
 
-      <section aria-labelledby="legacy-heading" className="px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
+      <section aria-labelledby="legacy-heading" className="bg-black px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <div className="mx-auto mb-4 h-1 w-12 bg-courses-accent" />
+          <div className="mx-auto mb-4 h-1 w-12 bg-white" />
           <h2
             id="legacy-heading"
-            className="font-serif text-3xl leading-tight text-courses-heading sm:text-4xl lg:text-5xl"
+            className="font-serif text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl"
           >
             Our Legacy
           </h2>
-          <p className="mt-5 text-base leading-7 text-courses-body sm:text-lg sm:leading-8">
+          <p className="mt-5 text-base font-bold leading-7 text-white sm:text-lg sm:leading-8">
             What began as a small practice space in Guwahati has grown into one of North East
             India's most respected centres for yoga and meditation. Over the years our students
             and instructors have carried Assam's name to national and international stages,
