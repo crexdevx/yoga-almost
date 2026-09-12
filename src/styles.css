@@ -92,6 +92,12 @@
   --color-wa-mosaic-muted: var(--wa-mosaic-muted);
   --color-wa-pastel: var(--wa-pastel);
   --color-wa-pastel-foreground: var(--wa-pastel-foreground);
+  --color-wa-beige: var(--wa-beige);
+  --color-wa-beige-foreground: var(--wa-beige-foreground);
+  --color-wa-beige-muted: var(--wa-beige-muted);
+  --color-wa-brown: var(--wa-brown);
+  --color-wa-brown-foreground: var(--wa-brown-foreground);
+  --color-wa-brown-muted: var(--wa-brown-muted);
   --color-wa-gold: var(--wa-gold);
   --color-wa-silver: var(--wa-silver);
   --color-wa-bronze: var(--wa-bronze);
@@ -163,6 +169,12 @@
   --wa-mosaic-muted: oklch(0.94 0.015 190);
   --wa-pastel: oklch(0.94 0.075 95);
   --wa-pastel-foreground: oklch(0.28 0.05 80);
+  --wa-beige: oklch(0.9 0.03 80);
+  --wa-beige-foreground: oklch(0.22 0.04 60);
+  --wa-beige-muted: oklch(0.5 0.04 70);
+  --wa-brown: oklch(0.68 0.09 55);
+  --wa-brown-foreground: oklch(0.99 0.005 55);
+  --wa-brown-muted: oklch(0.92 0.02 60);
   --wa-gold: oklch(0.8 0.13 85);
   --wa-silver: oklch(0.78 0.01 250);
   --wa-bronze: oklch(0.66 0.1 55);
@@ -236,6 +248,12 @@
   --wa-mosaic-muted: oklch(0.9 0.015 190);
   --wa-pastel: oklch(0.42 0.07 95);
   --wa-pastel-foreground: oklch(0.97 0.02 95);
+  --wa-beige: oklch(0.55 0.04 70);
+  --wa-beige-foreground: oklch(0.97 0.01 70);
+  --wa-beige-muted: oklch(0.88 0.015 70);
+  --wa-brown: oklch(0.48 0.07 55);
+  --wa-brown-foreground: oklch(0.99 0.005 55);
+  --wa-brown-muted: oklch(0.88 0.02 60);
   --wa-gold: oklch(0.8 0.13 85);
   --wa-silver: oklch(0.78 0.01 250);
   --wa-bronze: oklch(0.7 0.1 55);
