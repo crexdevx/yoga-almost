@@ -169,6 +169,12 @@
   --wa-mosaic-muted: oklch(0.94 0.015 190);
   --wa-pastel: oklch(0.94 0.075 95);
   --wa-pastel-foreground: oklch(0.28 0.05 80);
+  --wa-beige: oklch(0.9 0.03 80);
+  --wa-beige-foreground: oklch(0.22 0.04 60);
+  --wa-beige-muted: oklch(0.5 0.04 70);
+  --wa-brown: oklch(0.68 0.09 55);
+  --wa-brown-foreground: oklch(0.99 0.005 55);
+  --wa-brown-muted: oklch(0.92 0.02 60);
   --wa-gold: oklch(0.8 0.13 85);
   --wa-silver: oklch(0.78 0.01 250);
   --wa-bronze: oklch(0.66 0.1 55);
