@@ -12,4 +12,4 @@
 - [x] Add a WebP medal photograph and distinct medal tally styles
 - [x] Reorganize championship photos with requested captions
 - [x] Refresh recognition card colors and enlarge years
-- [ ] Verify the updated page visually and confirm a clean build
+- [x] Verify the updated page visually and confirm a clean build
