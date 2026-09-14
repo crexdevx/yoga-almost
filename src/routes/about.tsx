@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Award, Medal, Trophy } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 import { FloatingHeader } from "@/components/floating-header";
 import { Button } from "@/components/ui/button";
@@ -15,18 +15,17 @@ import champMedal from "@/assets/champ-medal-ceremony.webp.asset.json";
 import champTeam from "@/assets/champ-team-india.webp.asset.json";
 import champAsana from "@/assets/champ-asana-performance.webp.asset.json";
 import champSolo from "@/assets/champ-solo-performance.webp.asset.json";
+import threeMedals from "@/assets/three-yoga-medals.webp.asset.json";
 
-const championshipPhotos = [
+const teamPhotos = [
   { src: champMedal.url, alt: "Medal ceremony at the 2nd International Yoga Sports Championship" },
   { src: champTeam.url, alt: "Team India with medals and the national flag at the championship" },
-  { src: champAsana.url, alt: "Young athlete performing an advanced asana on the championship stage" },
-  { src: champSolo.url, alt: "Solo artistic yoga performance during the championship finals" },
 ];
 
 const medals = [
-  { icon: Trophy, count: "4", label: "Gold", color: "text-wa-gold" },
-  { icon: Medal, count: "2", label: "Silver", color: "text-wa-silver" },
-  { icon: Award, count: "1", label: "Bronze", color: "text-wa-bronze" },
+  { count: "4", label: "Gold", surface: "bg-wa-gold", text: "text-wa-medal-dark" },
+  { count: "2", label: "Silver", surface: "bg-wa-silver", text: "text-wa-medal-dark" },
+  { count: "1", label: "Bronze", surface: "bg-wa-bronze", text: "text-wa-medal-light" },
 ];
 
 const recognitions = [
@@ -258,16 +257,16 @@ function AboutPage() {
         </div>
       </section>
 
-      <section aria-labelledby="legacy-heading" className="px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
+      <section aria-labelledby="legacy-heading" className="bg-wa-ink px-4 py-16 text-wa-ink-foreground sm:px-6 sm:py-24 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <div className="mx-auto mb-4 h-1 w-12 bg-courses-accent" />
+          <div className="mx-auto mb-5 h-px w-16 bg-wa-gold" />
           <h2
             id="legacy-heading"
-            className="font-serif text-3xl leading-tight text-courses-heading sm:text-4xl lg:text-5xl"
+            className="font-serif text-5xl leading-none sm:text-6xl lg:text-7xl"
           >
             Our Legacy
           </h2>
-          <p className="mt-5 text-base leading-7 text-courses-body sm:text-lg sm:leading-8">
+          <p className="mt-7 text-base font-bold leading-7 text-wa-ink-muted sm:text-lg sm:leading-8">
             What began as a small practice space in Guwahati has grown into one of North East
             India's most respected centres for yoga and meditation. Over the years our students
             and instructors have carried Assam's name to national and international stages,
@@ -279,41 +278,50 @@ function AboutPage() {
 
       <section
         aria-labelledby="championship-heading"
-        className="wa-mosaic px-4 py-14 sm:px-6 sm:py-20 lg:px-8"
+        className="bg-wa-ink px-4 pb-16 pt-4 sm:px-6 sm:pb-24 lg:px-8"
       >
-        <div className="mx-auto max-w-6xl text-wa-mosaic-foreground">
+        <div className="mx-auto max-w-6xl text-wa-ink-foreground">
           <div className="text-center">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-wa-mosaic-muted">
+            <p className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-wa-gold">
               International Championship Sweep — 2017
             </p>
-            <h2 id="championship-heading" className="font-serif text-3xl leading-tight sm:text-4xl lg:text-5xl">
+            <h2 id="championship-heading" className="font-serif text-4xl leading-tight sm:text-5xl lg:text-6xl">
               2nd International Yoga Sports Championship
             </h2>
           </div>
 
-          <div className="mx-auto mt-10 grid max-w-3xl grid-cols-3 gap-4">
-            {medals.map(({ icon: Icon, count, label, color }) => (
+          <img
+            src={threeMedals.url}
+            alt="Gold, silver, and bronze championship medals"
+            className="mx-auto mt-10 aspect-[2/1] w-full max-w-4xl rounded-lg object-cover"
+            width={1400}
+            height={700}
+            loading="lazy"
+            decoding="async"
+          />
+
+          <div className="mx-auto mt-6 grid max-w-4xl grid-cols-3 gap-2 sm:gap-5">
+            {medals.map(({ count, label, surface, text }) => (
               <div
                 key={label}
-                className="rounded-2xl bg-courses-card/95 px-3 py-6 text-center shadow-xl"
+                className={`${surface} ${text} rounded-lg px-2 py-5 text-center sm:py-7`}
               >
-                <Icon aria-hidden="true" className={`mx-auto size-8 ${color}`} />
-                <p className="mt-3 font-serif text-3xl text-courses-heading sm:text-4xl">{count}</p>
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-courses-body">
+                <p className="font-serif text-4xl leading-none sm:text-6xl">{count}</p>
+                <p className="mt-2 text-xs font-black uppercase tracking-[0.16em] sm:text-sm">
                   {label}
                 </p>
               </div>
             ))}
           </div>
 
-          <div className="wa-scroll mt-10 overflow-x-auto pb-4">
+          <div className="wa-scroll mt-14 overflow-x-auto pb-4">
             <ul className="flex w-max gap-5">
-              {championshipPhotos.map((photo) => (
-                <li key={photo.src} className="w-[80vw] max-w-md shrink-0 sm:w-[26rem]">
+              {teamPhotos.map((photo) => (
+                <li key={photo.src} className="w-[84vw] max-w-2xl shrink-0 sm:w-[38rem]">
                   <img
                     src={photo.src}
                     alt={photo.alt}
-                    className="aspect-[16/9] w-full rounded-2xl object-cover shadow-xl"
+                    className="aspect-[16/9] w-full rounded-lg object-cover"
                     loading="lazy"
                     decoding="async"
                   />
@@ -321,7 +329,35 @@ function AboutPage() {
               ))}
             </ul>
           </div>
-          <p className="text-center text-xs text-wa-mosaic-muted">Scroll sideways to see more moments</p>
+          <h3 className="mt-3 text-center font-serif text-2xl leading-snug sm:text-3xl">
+            Representing India at the 2nd International Yoga Sports Championship
+          </h3>
+
+          <figure className="mx-auto mt-16 max-w-4xl">
+            <img
+              src={champAsana.url}
+              alt="Himanshu Saikia performing yoga at the 2nd International Yoga Sports Championship"
+              className="aspect-[16/9] w-full rounded-lg object-cover"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption className="mt-5 text-center font-serif text-2xl leading-snug sm:text-3xl">
+              Our student Himanshu Saikia performing yoga at the 2nd International Yoga Sports Championship
+            </figcaption>
+          </figure>
+
+          <figure className="mx-auto mt-16 max-w-4xl">
+            <img
+              src={champSolo.url}
+              alt="Student performing artistic yoga at an international championship"
+              className="aspect-[16/9] w-full rounded-lg object-cover"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption className="mt-5 text-center font-serif text-2xl leading-snug sm:text-3xl">
+              Our student performing artistic pair yoga at the International Championship
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -342,9 +378,9 @@ function AboutPage() {
             {recognitions.map((item) => (
               <article
                 key={item.title}
-                className="rounded-2xl border border-border bg-courses-card p-6 shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                className="rounded-lg border border-wa-recognition-border bg-wa-recognition-card p-6 shadow-lg transition-transform duration-300 hover:-translate-y-1"
               >
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-courses-accent">
+                <p className="font-serif text-3xl font-bold text-wa-recognition-year sm:text-4xl">
                   {item.year}
                 </p>
                 <h3 className="mt-3 font-serif text-xl leading-snug text-courses-heading sm:text-2xl">

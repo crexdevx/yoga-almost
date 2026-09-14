@@ -101,6 +101,14 @@
   --color-wa-gold: var(--wa-gold);
   --color-wa-silver: var(--wa-silver);
   --color-wa-bronze: var(--wa-bronze);
+  --color-wa-ink: var(--wa-ink);
+  --color-wa-ink-foreground: var(--wa-ink-foreground);
+  --color-wa-ink-muted: var(--wa-ink-muted);
+  --color-wa-medal-dark: var(--wa-medal-dark);
+  --color-wa-medal-light: var(--wa-medal-light);
+  --color-wa-recognition-card: var(--wa-recognition-card);
+  --color-wa-recognition-border: var(--wa-recognition-border);
+  --color-wa-recognition-year: var(--wa-recognition-year);
 }
 
 :root {
@@ -178,6 +186,14 @@
   --wa-gold: oklch(0.8 0.13 85);
   --wa-silver: oklch(0.78 0.01 250);
   --wa-bronze: oklch(0.66 0.1 55);
+  --wa-ink: oklch(0.12 0.008 250);
+  --wa-ink-foreground: oklch(0.99 0 0);
+  --wa-ink-muted: oklch(0.9 0.006 90);
+  --wa-medal-dark: oklch(0.17 0.025 65);
+  --wa-medal-light: oklch(0.98 0.01 70);
+  --wa-recognition-card: oklch(0.93 0.035 155);
+  --wa-recognition-border: oklch(0.77 0.06 155);
+  --wa-recognition-year: oklch(0.36 0.09 155);
   --why-cta: oklch(0.82 0.1 300);
   --why-cta-text: oklch(0.25 0.065 250);
   --why-cta-hover: oklch(0.77 0.11 300);
