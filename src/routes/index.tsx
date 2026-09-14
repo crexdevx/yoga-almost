@@ -311,12 +311,20 @@ function Index() {
             experience the transformative benefits of yoga.
           </p>
 
-          <Button
-            asChild
-            className="mt-10 inline-flex h-12 items-center justify-center rounded-full bg-why-cta px-8 text-base font-semibold text-why-cta-text shadow-lg transition-all duration-300 hover:bg-why-cta-hover hover:shadow-xl focus-visible:ring-why-cta sm:h-14 sm:px-10 sm:text-lg"
-          >
-            <Link to="/about">Who We Are</Link>
-          </Button>
+          <div className="relative mt-10 inline-block">
+            <span className="pop-notice absolute -right-2 -top-3 z-10 inline-flex items-center rounded-full bg-why-cta-text px-3 py-1 text-xs font-bold text-why-cta shadow-md sm:-right-4 sm:-top-4 sm:px-4 sm:py-1.5 sm:text-sm">
+              Discover our story
+            </span>
+            <Button
+              asChild
+              className="inline-flex h-12 items-center justify-center gap-2 rounded-full bg-why-cta px-8 text-base font-semibold text-why-cta-text shadow-lg transition-all duration-300 hover:bg-why-cta-hover hover:shadow-xl focus-visible:ring-why-cta sm:h-14 sm:px-10 sm:text-lg"
+            >
+              <Link to="/about">
+                Who We Are
+                <ArrowUpRight aria-hidden="true" className="size-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
 
