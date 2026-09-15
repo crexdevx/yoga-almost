@@ -84,6 +84,33 @@
   --color-courses-card: var(--courses-card);
   --color-courses-accent: var(--courses-accent);
   --color-courses-link: var(--courses-link);
+  --color-course-canvas: var(--course-canvas);
+  --color-course-ink: var(--course-ink);
+  --color-course-body: var(--course-body);
+  --color-course-muted: var(--course-muted);
+  --color-course-border: var(--course-border);
+  --color-course-surface: var(--course-surface);
+  --color-course-mist: var(--course-mist);
+  --color-course-sage: var(--course-sage);
+  --color-course-sun: var(--course-sun);
+  --color-course-placeholder: var(--course-placeholder);
+  --color-course-accent: var(--course-accent);
+  --color-course-cta: var(--course-cta);
+  --color-course-cta-hover: var(--course-cta-hover);
+  --color-course-cta-foreground: var(--course-cta-foreground);
+  --color-course-hero: var(--course-hero);
+  --color-course-hero-foreground: var(--course-hero-foreground);
+  --color-course-hero-muted: var(--course-hero-muted);
+  --color-course-hero-line: var(--course-hero-line);
+  --color-course-footer: var(--course-footer);
+  --color-course-footer-foreground: var(--course-footer-foreground);
+  --color-course-gallery: var(--course-gallery);
+  --color-course-gallery-panel: var(--course-gallery-panel);
+  --color-course-gallery-hover: var(--course-gallery-hover);
+  --color-course-gallery-line: var(--course-gallery-line);
+  --color-course-gallery-muted: var(--course-gallery-muted);
+  --color-course-gallery-active: var(--course-gallery-active);
+  --color-course-gallery-foreground: var(--course-gallery-foreground);
   --color-wa-teal: var(--wa-teal);
   --color-wa-teal-foreground: var(--wa-teal-foreground);
   --color-wa-teal-muted: var(--wa-teal-muted);
@@ -169,6 +196,33 @@
   --courses-card: oklch(1 0 0);
   --courses-accent: oklch(0.52 0.12 150);
   --courses-link: oklch(0.4 0.13 220);
+  --course-canvas: oklch(0.97 0.012 178);
+  --course-ink: oklch(0.25 0.055 205);
+  --course-body: oklch(0.43 0.038 205);
+  --course-muted: oklch(0.53 0.035 202);
+  --course-border: oklch(0.87 0.025 185);
+  --course-surface: oklch(0.995 0.004 175);
+  --course-mist: oklch(0.95 0.025 183);
+  --course-sage: oklch(0.94 0.035 156);
+  --course-sun: oklch(0.96 0.045 91);
+  --course-placeholder: oklch(0.925 0.026 183);
+  --course-accent: oklch(0.47 0.09 194);
+  --course-cta: oklch(0.38 0.095 196);
+  --course-cta-hover: oklch(0.32 0.09 196);
+  --course-cta-foreground: oklch(0.99 0.006 180);
+  --course-hero: oklch(0.27 0.072 198);
+  --course-hero-foreground: oklch(0.98 0.018 168);
+  --course-hero-muted: oklch(0.88 0.036 177);
+  --course-hero-line: oklch(0.86 0.04 177 / 0.45);
+  --course-footer: oklch(0.24 0.064 198);
+  --course-footer-foreground: oklch(0.97 0.018 170);
+  --course-gallery: oklch(0.17 0.04 202);
+  --course-gallery-panel: oklch(0.22 0.04 202);
+  --course-gallery-hover: oklch(0.29 0.05 198);
+  --course-gallery-line: oklch(0.78 0.045 180 / 0.3);
+  --course-gallery-muted: oklch(0.76 0.035 180);
+  --course-gallery-active: oklch(0.76 0.11 176);
+  --course-gallery-foreground: oklch(0.98 0.01 180);
   --wa-teal: oklch(0.72 0.07 190);
   --wa-teal-foreground: oklch(0.18 0.04 200);
   --wa-teal-muted: oklch(0.32 0.035 200);
@@ -256,6 +310,33 @@
   --courses-card: oklch(0.22 0.04 250);
   --courses-accent: oklch(0.78 0.11 151);
   --courses-link: oklch(0.78 0.12 220);
+  --course-canvas: oklch(0.16 0.025 205);
+  --course-ink: oklch(0.96 0.018 175);
+  --course-body: oklch(0.82 0.024 180);
+  --course-muted: oklch(0.7 0.025 185);
+  --course-border: oklch(0.42 0.035 190);
+  --course-surface: oklch(0.22 0.032 200);
+  --course-mist: oklch(0.2 0.035 193);
+  --course-sage: oklch(0.21 0.038 165);
+  --course-sun: oklch(0.23 0.04 88);
+  --course-placeholder: oklch(0.25 0.03 190);
+  --course-accent: oklch(0.73 0.09 180);
+  --course-cta: oklch(0.66 0.1 183);
+  --course-cta-hover: oklch(0.72 0.1 183);
+  --course-cta-foreground: oklch(0.16 0.04 200);
+  --course-hero: oklch(0.15 0.04 202);
+  --course-hero-foreground: oklch(0.98 0.018 168);
+  --course-hero-muted: oklch(0.84 0.034 177);
+  --course-hero-line: oklch(0.78 0.04 177 / 0.38);
+  --course-footer: oklch(0.12 0.033 203);
+  --course-footer-foreground: oklch(0.97 0.018 170);
+  --course-gallery: oklch(0.1 0.026 202);
+  --course-gallery-panel: oklch(0.17 0.032 202);
+  --course-gallery-hover: oklch(0.24 0.042 198);
+  --course-gallery-line: oklch(0.75 0.04 180 / 0.28);
+  --course-gallery-muted: oklch(0.72 0.03 180);
+  --course-gallery-active: oklch(0.76 0.11 176);
+  --course-gallery-foreground: oklch(0.98 0.01 180);
   --wa-teal: oklch(0.44 0.06 190);
   --wa-teal-foreground: oklch(0.97 0.01 190);
   --wa-teal-muted: oklch(0.88 0.015 190);
@@ -306,6 +387,34 @@
 .courses-scroll::-webkit-scrollbar-thumb {
   background: var(--courses-link);
   border-radius: 999px;
+}
+
+.course-hero {
+  background-color: var(--course-hero);
+  background-image:
+    linear-gradient(115deg, transparent 35%, oklch(1 0 0 / 0.05)),
+    radial-gradient(circle at 80% 30%, oklch(0.8 0.08 170 / 0.18), transparent 28%);
+}
+
+.course-panel {
+  box-shadow: 0 1.25rem 3.5rem oklch(0.26 0.05 195 / 0.08);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .course-panel {
+    animation: course-rise 600ms ease-out both;
+  }
+}
+
+@keyframes course-rise {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .reviews-section {
