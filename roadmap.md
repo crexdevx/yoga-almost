@@ -13,3 +13,10 @@
 - [x] Reorganize championship photos with requested captions
 - [x] Refresh recognition card colors and enlarge years
 - [x] Verify the updated page visually and confirm a clean build
+
+# Courses page redesign
+
+- [x] Build seven responsive course sections while preserving existing artwork
+- [x] Add fee, detail, and gallery placeholders without inventing content
+- [x] Add expandable course information and full-screen gallery navigation
+- [x] Verify desktop and mobile layouts, interactions, and build health
