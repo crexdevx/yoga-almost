@@ -19,4 +19,4 @@
 - [x] Build seven responsive course sections while preserving existing artwork
 - [x] Add fee, detail, and gallery placeholders without inventing content
 - [x] Add expandable course information and full-screen gallery navigation
-- [ ] Verify desktop and mobile layouts, interactions, and build health
+- [x] Verify desktop and mobile layouts, interactions, and build health

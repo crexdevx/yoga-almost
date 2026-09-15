@@ -287,7 +287,7 @@ function CourseSection({ course, index, onOpenGallery }: { course: Course; index
             <img
               src={course.image}
               alt={course.alt}
-              className="aspect-square h-full w-full object-cover"
+              className="aspect-square w-full object-cover"
               width={1200}
               height={1200}
               loading={index === 0 ? "eager" : "lazy"}
@@ -336,15 +336,16 @@ function CourseSection({ course, index, onOpenGallery }: { course: Course; index
           <section aria-label={`${course.title} gallery preview`} className="mt-7">
             <div className="grid grid-cols-3 gap-2">
               {[1, 2, 3].map((photoNumber) => (
-                <button
+                <Button
                   key={photoNumber}
                   type="button"
+                  variant="ghost"
                   onClick={onOpenGallery}
                   aria-label={`Open ${course.title} gallery at photo ${photoNumber}`}
-                  className="group flex aspect-[4/3] items-center justify-center rounded-lg border border-course-border bg-course-placeholder text-course-muted transition-colors hover:border-course-accent hover:text-course-accent"
+                  className="group h-auto aspect-[4/3] rounded-lg border border-course-border bg-course-placeholder p-0 text-course-muted transition-colors hover:border-course-accent hover:bg-course-placeholder hover:text-course-accent"
                 >
                   <Camera aria-hidden="true" className="size-5 transition-transform group-hover:scale-110" />
-                </button>
+                </Button>
               ))}
             </div>
             <p className="mt-2 text-xs text-course-muted">Gallery photos will be added here.</p>
